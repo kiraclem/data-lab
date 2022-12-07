@@ -1,0 +1,69 @@
+
+Features:
+
+users can sign into the app with their email and password
+
+users can create recipes with ingredients and instructions
+
+recipes can be marked as public or private
+
+users can view other people’s recipes
+
+ingredients from recipes can be added to user’s grocery lists
+
+users can create their own occasions and assign recipes to occasions
+
+Brainstorming:
+
+users, email, password. 
+recipie ingredients, instructions, 
+public-recipe 
+private-recipe
+ingredient-recipie
+occasions, name, 
+
+Table Ideas:
+
+User: //Will hold information about the user, such as a username, and required email and password to login with)
+user_id
+username,
+email
+password
+
+Grocerys: (essentailly a list users can add ingredients to, that is tied to a users information so you know what ingredients each user is saving)
+ingredients
+
+ingredients: (These are the ingredients that can be either added to a grocery list, or put into a recipie)
+ingredient_name
+
+//ingredient_Photo:
+//photo
+
+Recipe: (can add recipe names, ingredients, and instructions for a recipie)
+name
+instructions
+
+//recipe_ingredient: (to connect recipe and ingredient)
+recipe_ingredient_id
+recipe_id 
+ingredient_id
+
+Private: (A private recipie created by the user)
+
+
+Public: (A public recipe created by the user that will include likes and stars on the recipie)
+likes
+stars 
+
+//recipe_occasions: (to connect recipe and occasions)
+recipe_occasions_id
+recipe_id
+occasions_id
+
+Occasions: (Occasions that will be linked to a certain recipie)
+title 
+
+
+one to one: one ingredients to one ingredients_photo, one recipe for one private post, one recipe for one public post 
+one to many: user to recipe, one grocery list with many different ingredients
+many to many: many recipes with many ingredients, many recipes for many occasions.
